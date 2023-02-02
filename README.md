@@ -7,10 +7,10 @@
               
     - #### 2).
           const dup_arr = [1,2,3,8,2,7,3,4];
-          for (let i = 0; i < duparr.length; i++) {
-              for (let j = 0; j < duparr.length; j++) {
-                  if (duparr[i] == duparr[j] && i != j) {
-                      duparr.splice(j, 1)
+          for (let i = 0; i < dup_arr.length; i++) {
+              for (let j = 0; j < dup_arr.length; j++) {
+                  if (dup_arr[i] == dup_arr[j] && i != j) {
+                      dup_arr.splice(j, 1)
                   }
               }
           }
