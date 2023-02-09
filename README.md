@@ -16,3 +16,22 @@
           }
           console.log(dup_arr);
               
+### 2). Question
+### Reverse entire 2d array javascript
+- <i>Solution</i>
+    - #### 1).
+          const N_Arr = [[1,2,3], [4,5,6], [7,8,9]]
+          console.log(N_Arr.map(p_arr => p_arr.reverse()).reverse());
+              
+    - #### 2).
+          const N_Arr = [[1,2,3], [4,5,6], [7,8,9]]
+          const reversed_N_Arr = []
+          for (let i = N_Arr.length-1; i >= 0; i--) {
+              const temp = []
+              for (let j = N_Arr[i].length-1; j >= 0; j--) {
+                  temp.push(N_Arr[i][j])
+              }
+              reversed_N_Arr.push(temp)
+          }
+          console.log(reversed_N_Arr);
+              
